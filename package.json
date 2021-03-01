@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "test": "testcafe chrome ./test/*.spec.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -19,5 +20,7 @@
     "react-dom": "17.0.1",
     "swr": "^0.4.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "testcafe": "^1.11.0"
+  }
 }
